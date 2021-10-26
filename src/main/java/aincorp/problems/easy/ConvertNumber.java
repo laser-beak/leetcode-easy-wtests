@@ -5,15 +5,9 @@ import java.util.ArrayList;
 public class ConvertNumber {
 
     public String toRoman(int arabicNumber) {
-       String romanNumber = getRomanNumber(arabicNumber);
-       romanNumber = romanNumber.replace("IIII", "IV");
-       romanNumber = replaceInterlacedDigits(romanNumber);
+        String romanNumber = getRomanNumber(arabicNumber);
+        romanNumber = romanNumber.replace("IIII", "IV");
         return romanNumber;
-    }
-
-    private String replaceInterlacedDigits(String romanNumber) {
-
-        return null;
     }
 
     private static String getRomanNumber(int arabicNumber) {
