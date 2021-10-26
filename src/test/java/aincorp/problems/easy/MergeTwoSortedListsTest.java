@@ -17,7 +17,7 @@ class MergeTwoSortedListsTest {
     }
 
     @Test
-    public void when_list_and_empty_list_one_result(){
+    public void when_list_and_empty_list_one_result() {
         MergeTwoSortedLists mergeTwoSortedLists = new MergeTwoSortedLists();
 
         ListNode l1 = null;
@@ -27,7 +27,7 @@ class MergeTwoSortedListsTest {
     }
 
     @Test
-    public void when_not_empty_lists_result(){
+    public void when_not_empty_lists_result() {
         MergeTwoSortedLists mergeTwoSortedLists = new MergeTwoSortedLists();
 
         ListNode l1 = new ListNode(1, new ListNode(2, new ListNode(4, null)));
@@ -39,13 +39,15 @@ class MergeTwoSortedListsTest {
     }
 
     @Test
-    public void when_list_one_list_two_result(){
+    public void when_list_one_list_two_result() {
         MergeTwoSortedLists mergeTwoSortedLists = new MergeTwoSortedLists();
 
         ListNode l1 = new ListNode(1, null);
         ListNode l2 = new ListNode(2, null);
 
-        assertEquals(l2, mergeTwoSortedLists.mergeTwoLists(l1, l2));
+        ListNode result = new ListNode(1, new ListNode(2, null));
+
+        assertEquals(result, mergeTwoSortedLists.mergeTwoLists(l1, l2));
     }
 
 }
