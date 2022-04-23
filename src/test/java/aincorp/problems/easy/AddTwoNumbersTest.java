@@ -7,8 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class AddTwoNumbersTest {
 
-    @Test
-    @Ignore
+    //@Test
     void addTwoNumbers() {
         AddTwoNumbers addTwoNumbers = new AddTwoNumbers();
 
