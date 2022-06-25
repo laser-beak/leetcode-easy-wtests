@@ -7,7 +7,7 @@ public class RunningSumOf1dArray {
 
         int i = 0;
 
-        while(i < nums.length) {
+        while (i < nums.length) {
             int summary = 0;
             for (int j = 0; j <= i; j++) {
                 summary += nums[j];

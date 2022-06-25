@@ -22,7 +22,7 @@ public class IntersectionOfTwoArrays {
         int[] intersectNums = new int[numbersMap.keySet().size()];
 
         int k = 0;
-        for (Integer integer: numbersMap.keySet()) {
+        for (Integer integer : numbersMap.keySet()) {
             intersectNums[k] = integer;
             k++;
         }

@@ -2,7 +2,7 @@ package aincorp.problems.easy;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class RemovePalindromicSubsequencesTest {
 
@@ -27,5 +27,4 @@ class RemovePalindromicSubsequencesTest {
     public void s_has_palindrome_answer_two() {
         assertEquals(2, palindromicSubsequences.removePalindromeSub("baabb"));
     }
-
 }

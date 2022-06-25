@@ -3,7 +3,7 @@ package aincorp.problems.easy;
 public class ImplementStrStr {
 
     public int strStr(String haystack, String needle) {
-        if(needle.isEmpty()) {
+        if (needle.isEmpty()) {
             return 0;
         }
 

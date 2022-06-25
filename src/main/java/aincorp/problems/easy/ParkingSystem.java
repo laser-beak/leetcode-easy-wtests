@@ -1,7 +1,7 @@
 package aincorp.problems.easy;
 
 public class ParkingSystem {
-    
+
     public ParkingSystem(int big, int medium, int small) {
 
     }

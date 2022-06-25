@@ -2,23 +2,14 @@ package aincorp.problems.easy;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 class TransposeMatrixTest {
-
     private final TransposeMatrix transposeMatrix = new TransposeMatrix();
 
     @Test
-    public void first_test() {
-        int[][] input = new int[][]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
-        int[][] output = new int[][]{{1, 4, 7}, {2, 5, 8}, {3, 6, 9}};
-        assertArrayEquals(output, transposeMatrix.transpose(input));
-    }
-
-    @Test
-    public void second_test() {
-        int[][] input = new int[][]{{1, 2, 3}, {4, 5, 6}};
-        int[][] output = new int[][]{{1, 4}, {2, 5}, {3, 6}};
-        assertArrayEquals(output, transposeMatrix.transpose(input));
+    public void test() {
+        assertArrayEquals(new int[][]{{1, 4, 7}, {2, 5, 8}, {3, 6, 9}}, transposeMatrix.transpose(new int[][]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}));
+        assertArrayEquals(new int[][]{{1, 4}, {2, 5}, {3, 6}}, transposeMatrix.transpose(new int[][]{{1, 2, 3}, {4, 5, 6}}));
     }
 }

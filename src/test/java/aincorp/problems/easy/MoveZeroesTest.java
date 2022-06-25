@@ -2,7 +2,7 @@ package aincorp.problems.easy;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 class MoveZeroesTest {
     private final MoveZeroes moveZeroes = new MoveZeroes();

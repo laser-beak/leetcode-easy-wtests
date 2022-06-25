@@ -17,7 +17,7 @@ public class MergeTwoSortedLists {
                     insert.next = next2;
                     break;
                 } else {
-                    if(curr2.next != null) {
+                    if (curr2.next != null) {
                         if (curr.val < curr2.next.val) {
                             ListNode insert = new ListNode(curr.val, null);
                             curr2.next = insert;
@@ -25,7 +25,7 @@ public class MergeTwoSortedLists {
                             break;
                         }
                     } else {
-                        if(curr.val < curr2.val) {
+                        if (curr.val < curr2.val) {
                             ListNode insert = new ListNode(curr2.val, null);
                             curr.next = insert;
                             insert.next = null;
@@ -42,7 +42,7 @@ public class MergeTwoSortedLists {
 
             curr = next;
         }
-        if(l2 == null) {
+        if (l2 == null) {
             return l1;
         }
 

@@ -19,7 +19,7 @@ public class ConvertRomanNumber {
         char[] chars = romanNumber.toCharArray();
 
         for (int i = 0; i < chars.length; i++) {
-            if ( i + 1 < chars.length && digitsMap.get(chars[i + 1]) > digitsMap.get(chars[i])) {
+            if (i + 1 < chars.length && digitsMap.get(chars[i + 1]) > digitsMap.get(chars[i])) {
                 arabicNumber = arabicNumber + digitsMap.get(chars[i + 1]) - digitsMap.get(chars[i]);
                 i++;
             } else {

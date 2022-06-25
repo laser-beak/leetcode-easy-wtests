@@ -9,21 +9,16 @@ class RunningSumOf1DArrayTest {
 
     @Test
     public void test_empty_array() {
-        int[] result = new int[0];
-        assertArrayEquals(result, runningSumof1dArray.runningSum(result));
+        assertArrayEquals(new int[0], runningSumof1dArray.runningSum(new int[0]));
     }
 
     @Test
     public void first_test() {
-        int[] input = new int[]{1, 2, 3, 4};
-        int[] output = new int[]{1, 3, 6, 10};
-        assertArrayEquals(output, runningSumof1dArray.runningSum(input));
+        assertArrayEquals(new int[]{1, 3, 6, 10}, runningSumof1dArray.runningSum(new int[]{1, 2, 3, 4}));
     }
 
     @Test
     public void second_test() {
-        int[] input = new int[]{1, 1, 1, 1, 1};
-        int[] output = new int[]{1, 2, 3, 4, 5};
-        assertArrayEquals(output, runningSumof1dArray.runningSum(input));
+        assertArrayEquals(new int[]{1, 2, 3, 4, 5}, runningSumof1dArray.runningSum(new int[]{1, 1, 1, 1, 1}));
     }
 }

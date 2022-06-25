@@ -1,8 +1,5 @@
 package aincorp.problems.easy;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
 public class CreateTargetArrayInTheGivenOrder {
     public int[] createTargetArray(int[] nums, int[] index) {
 

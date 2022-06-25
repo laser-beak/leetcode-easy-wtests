@@ -1,6 +1,7 @@
 package aincorp.problems.easy;
 
-import java.util.*;
+import java.util.Map;
+import java.util.TreeMap;
 
 public class MaximumNumberOfBalloons {
 
@@ -12,11 +13,11 @@ public class MaximumNumberOfBalloons {
         String balloon = "balloon";
         char[] balloonChars = balloon.toCharArray();
 
-        for (char ch: balloonChars) {
+        for (char ch : balloonChars) {
             map.put(ch, 0);
         }
 
-        for (char b: chars) {
+        for (char b : chars) {
             if (map.containsKey(b)) {
                 map.put(b, map.get(b) + 1);
             }
@@ -24,7 +25,7 @@ public class MaximumNumberOfBalloons {
 
         int min = (int) map.values().toArray()[0];
 
-        for (Integer integer: map.values()) {
+        for (Integer integer : map.values()) {
             if (min > integer) {
                 min = integer;
             }

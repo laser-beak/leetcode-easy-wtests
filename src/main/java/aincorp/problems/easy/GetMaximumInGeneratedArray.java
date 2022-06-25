@@ -4,7 +4,7 @@ public class GetMaximumInGeneratedArray {
 
     public int getMaximumGenerated(int n) {
 
-        if (n ==0) {
+        if (n == 0) {
             return 0;
         }
         int[] nums = new int[n + 1];
@@ -15,7 +15,7 @@ public class GetMaximumInGeneratedArray {
         nums[1] = 1;
 
         int i = 1;
-        while(i <= n / 2) {
+        while (i <= n / 2) {
             nums[i * 2] = nums[i];
             if (i * 2 + 1 <= n) {
                 nums[i * 2 + 1] = nums[i] + nums[i + 1];

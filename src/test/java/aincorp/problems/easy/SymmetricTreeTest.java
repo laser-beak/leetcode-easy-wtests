@@ -15,8 +15,7 @@ class SymmetricTreeTest {
 
     @Test
     public void when_right_left_child_null_answer_true() {
-        TreeNode treeNode = new TreeNode(1,  null, null);
-        assertEquals(false, symmetricTree.isSymmetric(treeNode));
+        assertEquals(false, symmetricTree.isSymmetric(new TreeNode(1, null, null)));
     }
 
     /*@Test

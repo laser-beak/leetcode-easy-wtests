@@ -6,8 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.Assert.assertEquals;
 
 class SameTreeTest {
-
-    private SameTree sameTree = new SameTree();
+    private final SameTree sameTree = new SameTree();
 
     @Test
     public void first_test() {
@@ -58,5 +57,4 @@ class SameTreeTest {
 
         assertEquals(false, sameTree.isSameTree(p, q));
     }
-
 }

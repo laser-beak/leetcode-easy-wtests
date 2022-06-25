@@ -11,9 +11,6 @@ public class LongestCommonPrefix {
 
         String word = strs[0];
 
-        
-
-
 
         return longestCommonPrefix;
     }
