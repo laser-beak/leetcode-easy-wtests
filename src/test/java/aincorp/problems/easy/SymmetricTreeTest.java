@@ -18,11 +18,8 @@ class SymmetricTreeTest {
         assertEquals(false, symmetricTree.isSymmetric(new TreeNode(1, null, null)));
     }
 
-    /*@Test
+    @Test
     public void when_tree_is_symmetric_left_right_same_value_answer_true() {
-        TreeNode treeNode = new TreeNode(1,
-                new TreeNode(2, null, null), new TreeNode(2, null, null)
-        );
-        assertEquals(true, symmetricTree.isSymmetric(treeNode));
-    }*/
+        assertEquals(true, symmetricTree.isSymmetric(new TreeNode(1, new TreeNode(2, null, null), new TreeNode(2, null, null))));
+    }
 }

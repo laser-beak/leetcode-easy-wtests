@@ -10,12 +10,8 @@ class XOROperationInAnArrayTest {
 
     @DisplayName("XOROperationInAnArray.xorOperation")
     @Test
-    void xorOperation() {
+    void test() {
         assertEquals(8, xorOperationInAnArray.xorOperation(5, 0));
-    }
-
-    @Test
-    void xorOperationSecond() {
         assertEquals(8, xorOperationInAnArray.xorOperation(4, 3));
     }
 }

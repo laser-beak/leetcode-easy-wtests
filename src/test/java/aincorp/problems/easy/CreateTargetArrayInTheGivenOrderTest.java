@@ -6,7 +6,6 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 class CreateTargetArrayInTheGivenOrderTest {
-
     private final CreateTargetArrayInTheGivenOrder createTargetArrayInTheGivenOrder = new CreateTargetArrayInTheGivenOrder();
 
     @DisplayName("CreateTargetArrayInTheGivenOrder.createTargetArray")

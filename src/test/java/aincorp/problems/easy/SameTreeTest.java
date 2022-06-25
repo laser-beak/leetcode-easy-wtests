@@ -1,6 +1,7 @@
 package aincorp.problems.easy;
 
 import aincorp.problems.easy.models.TreeNode;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -28,7 +29,8 @@ class SameTreeTest {
         assertEquals(true, sameTree.isSameTree(null, null));
     }
 
-    //@Test
+    @Disabled
+    @Test
     public void reversed_tree() {
         TreeNode p = new TreeNode(1,
                 new TreeNode(2, null, null),
