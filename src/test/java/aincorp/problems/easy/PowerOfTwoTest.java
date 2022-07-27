@@ -2,7 +2,8 @@ package aincorp.problems.easy;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class PowerOfTwoTest {
 
@@ -10,10 +11,10 @@ class PowerOfTwoTest {
 
     @Test
     public void test() {
-        assertEquals(false, power.isPowerOfTwo(0));
-        assertEquals(true, power.isPowerOfTwo(1));
-        assertEquals(true, power.isPowerOfTwo(16));
-        assertEquals(false, power.isPowerOfTwo(3));
+        assertFalse(power.isPowerOfTwo(0));
+        assertTrue(power.isPowerOfTwo(1));
+        assertTrue(power.isPowerOfTwo(16));
+        assertFalse(power.isPowerOfTwo(3));
     }
 
 }
