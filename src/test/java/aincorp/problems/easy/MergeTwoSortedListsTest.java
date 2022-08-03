@@ -1,11 +1,9 @@
 package aincorp.problems.easy;
 
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@Disabled
 class MergeTwoSortedListsTest {
     private final MergeTwoSortedLists mergeTwoSortedLists = new MergeTwoSortedLists();
 
@@ -29,6 +27,9 @@ class MergeTwoSortedListsTest {
 
     @Test
     public void when_list_one_list_two_result() {
-        assertEquals(new ListNode(2, null), mergeTwoSortedLists.mergeTwoLists(new ListNode(1, null), new ListNode(2, null)));
+        ListNode l1 = new ListNode(1);
+        ListNode l2 = new ListNode(2);
+
+        assertEquals(new ListNode(1, new ListNode(2)), mergeTwoSortedLists.mergeTwoLists(l1, l2));
     }
 }

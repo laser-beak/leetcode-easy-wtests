@@ -7,7 +7,7 @@ public class FindTheHighestAltitude {
 
         int sum = 0;
 
-        for (int g: gain) {
+        for (int g : gain) {
             sum += g;
             if (sum > highestAttitude) {
                 highestAttitude = sum;

@@ -8,7 +8,8 @@ package aincorp.problems.easy;
  * int param_1 = obj.sumRegion(row1,col1,row2,col2);
  */
 public class NumMatrix {
-    private int[][] matrix ;
+    private int[][] matrix;
+
     public NumMatrix(int[][] matrix) {
         this.matrix = matrix;
     }

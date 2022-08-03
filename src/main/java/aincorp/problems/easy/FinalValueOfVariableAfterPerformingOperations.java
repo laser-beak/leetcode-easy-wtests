@@ -5,7 +5,7 @@ public class FinalValueOfVariableAfterPerformingOperations {
     public int finalValueAfterOperations(String[] operations) {
         int ans = 0;
 
-        for (String str: operations) {
+        for (String str : operations) {
             if (str.contains("-")) {
                 ans--;
             } else {
