@@ -3,10 +3,28 @@ package aincorp.problems.easy;
 public class FirstUniqueCharacterInAString {
 
     public int firstUniqChar(String s) {
-        for (int i = 0; i < s.length(); i++) {
-            boolean b = !s.substring(i + 1).contains(s.substring(i, i + 1));
-            boolean b1 = !s.substring(0, i).contains(s.substring(i, i + 1));
-            if (b && b1) {
+        char[] chars = s.toCharArray();
+
+        for (int i = 0; i < chars.length; i++) {
+
+            boolean b1 = false;
+            boolean b2 = false;
+
+            for (int j = 0; j < i; j++) {
+                if (chars[i] == chars[j]) {
+                    b1 = true;
+                    break;
+                }
+            }
+
+            for (int k = i + 1; k < chars.length; k++) {
+                if (chars[i] == chars[k]) {
+                    b2 = true;
+                    break;
+                }
+            }
+
+            if (b2 == false && b1 == false) {
                 return i;
             }
         }
