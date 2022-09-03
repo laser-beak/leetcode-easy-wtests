@@ -3,11 +3,10 @@ package aincorp.problems.easy;
 public class RemoveDuplicatesFromSortedList {
 
     public ListNode deleteDuplicates(ListNode head) {
-        ListNode result;
-
         ListNode root = new ListNode();
 
         ListNode temp = root;
+
         while (head != null) {
             if (head.next != null && head.val != head.next.val) {
                 while (temp.next == null) {
@@ -23,8 +22,6 @@ public class RemoveDuplicatesFromSortedList {
             head = head.next;
         }
 
-        result = root.next;
-
-        return result;
+        return root.next;
     }
 }
