@@ -12,6 +12,8 @@ class PairSumTest {
     public void test() {
         assertEquals(0, pairSum.solution(new int[]{}));
         assertEquals(2, pairSum.solution(new int[]{-1, 7, -9, -7, 1, 8}));
+        assertEquals(0, pairSum.solution(new int[]{-1, -7, -9, -7, -1, -8}));
+        assertEquals(1, pairSum.solution(new int[]{-1, 1}));
     }
 
 }

@@ -1,5 +1,8 @@
 package aincorp.luxoft;
 
+import java.util.HashSet;
+import java.util.Set;
+
 /*
 Write java function which calculates number of pairs in array.
 Pair is when two numbers added together, result is zero.
@@ -27,11 +30,25 @@ public class PairSum {
             }
         }*/
 
-        for (int i = 0; i < arr.length; i++) {
+        /*for (int i = 0; i < arr.length; i++) {
             for (int j = i + 1; j < arr.length; j++) {
                 if (arr[i] + arr[j] == 0) {
                     count++;
                 }
+            }
+        }*/
+
+        Set<Integer> negativeNumberSet = new HashSet<>();
+
+        for (int i : arr) {
+            if (i < 0) {
+                negativeNumberSet.add(i);
+            }
+        }
+
+        for (int i : arr) {
+            if (i > 0 && negativeNumberSet.contains(-1 * i)) {
+                count++;
             }
         }
 
