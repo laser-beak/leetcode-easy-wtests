@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class WhenConvertRomanToIntegerTest {
+public class ConvertRomanToIntegerTest {
 
     private final ConvertRomanNumber convertRomanNumber = new ConvertRomanNumber();
 

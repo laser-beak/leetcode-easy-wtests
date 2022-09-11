@@ -2,7 +2,8 @@ package aincorp.problems.easy;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class LinkedListCycleTest {
 
@@ -18,7 +19,7 @@ class LinkedListCycleTest {
     }
 
     @Test
-    public void when_ListNode_Not_have_cycle(){
+    public void when_ListNode_Not_have_cycle() {
         assertFalse(listCycle.hasCycle(new ListNode(1)));
     }
 

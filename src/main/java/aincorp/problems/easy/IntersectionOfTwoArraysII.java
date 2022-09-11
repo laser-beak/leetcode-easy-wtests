@@ -29,7 +29,7 @@ public class IntersectionOfTwoArraysII {
             }
         }
 
-        int [] ints = new int[integerList.size()];
+        int[] ints = new int[integerList.size()];
 
         for (int i = 0; i < ints.length; i++) {
             ints[i] = integerList.get(i);
