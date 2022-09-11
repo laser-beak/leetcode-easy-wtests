@@ -24,8 +24,8 @@ public class RingsAndRods {
             }
         }
 
-        for (Character character : map.keySet()) {
-            if (map.get(character).size() == 3) {
+        for (Map.Entry<Character, Set<Character>> entry : map.entrySet()) {
+            if (map.get(entry.getKey()).size() == 3) {
                 number++;
             }
         }

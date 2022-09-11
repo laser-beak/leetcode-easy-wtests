@@ -6,10 +6,7 @@ public class BackspaceStringCompare {
     public boolean backspaceCompare(String s, String t) {
         Stack<Character> first = process(s);
         Stack<Character> second = process(t);
-        if (first.equals(second)) {
-            return true;
-        }
-        return false;
+        return first.equals(second);
     }
 
     private Stack<Character> process(String text) {

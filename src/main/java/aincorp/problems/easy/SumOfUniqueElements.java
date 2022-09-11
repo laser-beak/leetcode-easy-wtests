@@ -18,9 +18,9 @@ public class SumOfUniqueElements {
             }
         }
 
-        for (int key : map.keySet()) {
-            if (map.get(key) == 0) {
-                sum += key;
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+            if (map.get(entry.getKey()) == 0) {
+                sum += entry.getKey();
             }
         }
 

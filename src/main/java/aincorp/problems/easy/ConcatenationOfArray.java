@@ -1,5 +1,10 @@
 package aincorp.problems.easy;
 
+/**
+ * work faster
+ * System.arraycopy(nums, 0, ans, 0, n);
+ * System.arraycopy(nums, 0, ans, n, m);
+ */
 public class ConcatenationOfArray {
 
     public int[] getConcatenation(int[] nums) {
@@ -16,8 +21,4 @@ public class ConcatenationOfArray {
 
         return ans;
     }
-
-    //System.arraycopy(nums, 0, ans, 0, n);
-    //System.arraycopy(nums, 0, ans, n, m);
-    //work faster
 }
