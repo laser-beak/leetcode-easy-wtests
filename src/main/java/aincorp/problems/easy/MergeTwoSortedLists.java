@@ -3,50 +3,50 @@ package aincorp.problems.easy;
 public class MergeTwoSortedLists {
 
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
-        ListNode curr = l1;
 
-        while (curr != null) {
-            ListNode next = curr.next;
+        if (l1 == null) return l2;
+        if (l2 == null) return l1;
 
-            ListNode curr2 = l2;
-            while (curr2 != null) {
-                ListNode next2 = curr2.next;
-                if (curr.val == curr2.val) {
-                    ListNode insert = new ListNode(curr.val, null);
-                    curr2.next = insert;
-                    insert.next = next2;
-                    break;
-                } else {
-                    if (curr2.next != null) {
-                        if (curr.val < curr2.next.val) {
-                            ListNode insert = new ListNode(curr.val, null);
-                            curr2.next = insert;
-                            insert.next = next2;
-                            break;
-                        }
-                    } else {
-                        if (curr.val < curr2.val) {
-                            ListNode insert = new ListNode(curr2.val, null);
-                            curr.next = insert;
-                            insert.next = null;
-                            l2 = l1;
-                            break;
-                        } else {
-                            curr2.next = curr;
-                        }
-                        break;
-                    }
-                }
-                curr2 = next2;
+        ListNode resultListNode = new ListNode();
+        ListNode currentListNode = resultListNode;
+
+        while (l1 != null || l2 != null) {
+            ListNode nextListNode = new ListNode();
+
+            if (l1 == null) {
+                nextListNode.val = l2.val;
+                l2 = l2.next;
+            } else if (l2 == null) {
+                nextListNode.val = l1.val;
+                l1 = l1.next;
+            } else if (l1.val > l2.val) {
+                nextListNode.val = l2.val;
+                l2 = l2.next;
+            } else {
+                nextListNode.val = l1.val;
+                l1 = l1.next;
             }
 
-            curr = next;
-        }
-        if (l2 == null) {
-            return l1;
+            currentListNode.next = nextListNode;
+            currentListNode = nextListNode;
         }
 
-        return l2;
-
+        return resultListNode.next;
     }
+
+    /*ListNode newHead = new ListNode();
+    ListNode curr = newHead;
+        while(list1 != null && list2 != null) {
+        if(list1.val < list2.val) {
+            curr.next = list1;
+            list1 = list1.next;
+        } else {
+            curr.next = list2;
+            list2 = list2.next;
+        }
+        curr = curr.next;
+    }
+        if(list1 != null) curr.next = list1;
+        if(list2 != null) curr.next = list2;
+        return newHead.next;*/
 }
