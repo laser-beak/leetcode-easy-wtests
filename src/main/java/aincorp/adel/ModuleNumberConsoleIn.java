@@ -11,8 +11,6 @@ public class ModuleNumberConsoleIn {
         int max = 0;
 
         while (sc.hasNext()) {
-
-
             if (sc.hasNextInt()) {
                 int num = sc.nextInt();
                 if (num == 0) {

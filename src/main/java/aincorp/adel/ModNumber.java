@@ -11,7 +11,7 @@ public class ModNumber {
             if (max < arr[i]) {
                 max = arr[i];
                 count = 1;
-            } else if (max == arr[i]){
+            } else if (max == arr[i]) {
                 count++;
             }
         }
