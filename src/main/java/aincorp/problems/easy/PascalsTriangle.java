@@ -18,7 +18,7 @@ public class PascalsTriangle {
         if (numRows == 2) {
             List<List<Integer>> list = new ArrayList<>();
             list.add(Arrays.asList(1));
-            list.add(Arrays.asList(1,1));
+            list.add(Arrays.asList(1, 1));
             return list;
         }
 
