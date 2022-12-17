@@ -1,10 +1,10 @@
 package aincorp.problems.easy;
 
 import aincorp.problems.easy.models.TreeNode;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 class SameTreeTest {
     private final SameTree sameTree = new SameTree();
@@ -21,15 +21,14 @@ class SameTreeTest {
                 new TreeNode(3, null, null)
         );
 
-        assertEquals(true, sameTree.isSameTree(p, q));
+        assertTrue(sameTree.isSameTree(p, q));
     }
 
     @Test
     public void null_test() {
-        assertEquals(true, sameTree.isSameTree(null, null));
+        assertTrue(sameTree.isSameTree(null, null));
     }
 
-    @Disabled
     @Test
     public void reversed_tree() {
         TreeNode p = new TreeNode(1,
@@ -42,7 +41,7 @@ class SameTreeTest {
                 new TreeNode(2, null, null)
         );
 
-        assertEquals(false, sameTree.isSameTree(p, q));
+        assertFalse(sameTree.isSameTree(p, q));
     }
 
     @Test
@@ -54,9 +53,14 @@ class SameTreeTest {
 
         TreeNode q = new TreeNode(1,
                 new TreeNode(1, null, null),
-                new TreeNode(2, null, null)
+                new TreeNode(3, null, null)
         );
 
-        assertEquals(false, sameTree.isSameTree(p, q));
+        assertFalse(sameTree.isSameTree(p, q));
+    }
+
+    @Test
+    public void trees_not_null() {
+        assertTrue(sameTree.isSameTree(new TreeNode(), new TreeNode()));
     }
 }

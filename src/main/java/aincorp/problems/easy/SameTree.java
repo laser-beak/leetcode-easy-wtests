@@ -22,23 +22,55 @@ import java.util.Stack;
 public class SameTree {
 
     public boolean isSameTree(TreeNode p, TreeNode q) {
-        Stack<Integer> pStack = new Stack<>();
-        Stack<Integer> qStack = new Stack<>();
-
-        pStack = preOrderTravers(p, pStack);
-        qStack = preOrderTravers(q, qStack);
-
-        return pStack.equals(qStack);
-    }
-
-    public Stack<Integer> preOrderTravers(TreeNode root, Stack<Integer> stack) {
-
-        if (root != null) {
-            stack.push(root.val);
-            preOrderTravers(root.left, stack);
-            preOrderTravers(root.right, stack);
+        if (p == null && q == null) {
+            return true;
         }
 
-        return stack;
+        boolean flag = true;
+
+        Stack<TreeNode> pStack = new Stack<>();
+        Stack<TreeNode> qStack = new Stack<>();
+
+        TreeNode currentP;
+        pStack.push(p);
+        TreeNode currentQ;
+        qStack.push(q);
+
+        while (!pStack.isEmpty() && !qStack.isEmpty()) {
+            currentP = pStack.pop();
+            currentQ = qStack.pop();
+
+            if (currentP != null && currentQ != null) {
+                if (currentP.val != currentQ.val) {
+                    flag = false;
+                }
+            } else {
+                return false;
+            }
+
+            if (currentP.right != null || currentQ.right != null) {
+                pStack.push(currentP.right);
+                qStack.push(currentQ.right);
+            }
+
+            if (currentP.left != null || currentQ.left != null) {
+                pStack.push(currentP.left);
+                qStack.push(currentQ.left);
+            }
+        }
+
+        return flag;
     }
+
+    /*public boolean isSameTree(TreeNode p, TreeNode q) {
+        if (p == null && q == null) {
+            return true;
+        }
+
+        if (p == null || q == null) {
+            return false;
+        }
+
+        return (p.val == q.val && isSameTree(p.left, q.left) && isSameTree(p.left, q.left));
+    }*/
 }
