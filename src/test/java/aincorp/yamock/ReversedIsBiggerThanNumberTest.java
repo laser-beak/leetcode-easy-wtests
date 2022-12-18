@@ -13,9 +13,10 @@ class ReversedIsBiggerThanNumberTest {
     @Test
     public void test() {
         assertTrue(reversedIsBiggerThanNumber.compareNumbers(14));
-        assertTrue(reversedIsBiggerThanNumber.compareNumbers(44));
-        assertTrue(reversedIsBiggerThanNumber.compareNumbers(401));
-        assertFalse(reversedIsBiggerThanNumber.compareNumbers(105));
+        assertFalse(reversedIsBiggerThanNumber.compareNumbers(44));
+        assertFalse(reversedIsBiggerThanNumber.compareNumbers(401));
+        assertTrue(reversedIsBiggerThanNumber.compareNumbers(105));
+        assertFalse(reversedIsBiggerThanNumber.compareNumbers(1001));
     }
 
 }

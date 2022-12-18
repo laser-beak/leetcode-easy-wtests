@@ -2,15 +2,15 @@ package aincorp.yamock;
 
 public class ReversedIsBiggerThanNumber {
 
-    public boolean compareNumbers(Integer number) {
-        Integer reversed = 1;
+    public boolean compareNumbers(int number) {
+        int c = 0;
+        int b = number;
 
-        while (number > 1) {
-            reversed *= (number % 10) * 10;
-            reversed += number / 10;
-            number /= 10;
+        while (b > 0) {
+            c = c * 10 + (b % 10);
+            b /= 10;
         }
 
-        return reversed > number;
+        return c > number;
     }
 }
