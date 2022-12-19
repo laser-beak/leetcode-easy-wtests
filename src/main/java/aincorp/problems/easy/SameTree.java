@@ -71,6 +71,6 @@ public class SameTree {
             return false;
         }
 
-        return (p.val == q.val && isSameTree(p.left, q.left) && isSameTree(p.left, q.left));
+        return (p.val == q.val && isSameTree(p.left, q.left) && isSameTree(p.right, q.right));
     }*/
 }
