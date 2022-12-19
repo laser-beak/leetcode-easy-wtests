@@ -20,17 +20,15 @@ import aincorp.problems.easy.models.TreeNode;
 public class SymmetricTree {
 
     public boolean isSymmetric(TreeNode root) {
-        if (root != null) {
-            TreeNode left = root.left;
-            TreeNode right = root.right;
-            if (left == null && right != null || left != null && right == null) {
-                if (left.val == right.val) {
+        return isMirror(root, root);
+    }
 
-                }
-                return false;
-            }
-            return false;
-        }
+    boolean isMirror(TreeNode node1, TreeNode node2) {
+        if (node1 == null && node2 == null)
+            return true;
+
+        if (node1 != null && node2 != null && node1.val == node2.val)
+            return (isMirror(node1.left, node2.right) && isMirror(node1.right, node2.left));
         return false;
     }
 }
