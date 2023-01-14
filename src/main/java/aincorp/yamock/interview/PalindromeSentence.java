@@ -8,24 +8,24 @@ public class PalindromeSentence {
             return false;
         }
 
-        int p1 = 0;
-        int p2 = st.length() - 1;
+        int start = 0;
+        int end = st.length() - 1;
 
-        while (p1 < p2) {
-            while (!Character.isLetter(st.charAt(p1))) {
-                p1++;
+        while (start < end) {
+            while (!Character.isLetter(st.charAt(start))) {
+                start++;
             }
 
-            while (!Character.isLetter(st.charAt(p2))) {
-                p2--;
+            while (!Character.isLetter(st.charAt(end))) {
+                end--;
             }
 
-            if (Character.toLowerCase(st.charAt(p1)) != Character.toLowerCase(st.charAt(p2))) {
+            if (Character.toLowerCase(st.charAt(start)) != Character.toLowerCase(st.charAt(end))) {
                 return false;
             }
 
-            p1++;
-            p2--;
+            start++;
+            end--;
         }
 
         return true;
