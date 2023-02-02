@@ -1,6 +1,5 @@
 package aincorp.problems.easy;
 
-import org.junit.Ignore;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -10,7 +9,6 @@ class RemoveOneElementToMakeTheArrayStrictlyIncreasingTest {
 
     private final RemoveOneElementToMakeTheArrayStrictlyIncreasing remove = new RemoveOneElementToMakeTheArrayStrictlyIncreasing();
 
-    @Ignore
     @Test
     public void test() {
         //assertFalse(remove.canBeIncreasing(new int[]{}));
