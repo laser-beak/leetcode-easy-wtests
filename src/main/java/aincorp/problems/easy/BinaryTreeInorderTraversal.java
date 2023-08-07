@@ -3,9 +3,9 @@ package aincorp.problems.easy;
 
 import aincorp.problems.easy.models.TreeNode;
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Stack;
 
 /**
  * Definition for a binary tree node.
@@ -27,7 +27,7 @@ public class BinaryTreeInorderTraversal {
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> result = new ArrayList<>();
 
-        Stack<TreeNode> traversalStack = new Stack<>();
+        ArrayDeque<TreeNode> traversalStack = new ArrayDeque<>();
 
         TreeNode current = root;
 
@@ -44,6 +44,7 @@ public class BinaryTreeInorderTraversal {
         return result;
     }
 
+    //Обратный обход
     private List<Integer> postOrderTravers(TreeNode root, List<Integer> input) {
         if (root == null) return input;
         postOrderTravers(root.left, input);
@@ -52,6 +53,7 @@ public class BinaryTreeInorderTraversal {
         return input;
     }
 
+    //Центрированный обход
     private List<Integer> inOrderTravers(TreeNode root, List<Integer> input) {
         if (root == null) return input;
         inOrderTravers(root.left, input);
@@ -60,6 +62,7 @@ public class BinaryTreeInorderTraversal {
         return input;
     }
 
+    //Прямой обход
     private List<Integer> preOrderTravers(TreeNode root, List<Integer> input) {
         if (root == null) return input;
         input.add(root.val);

@@ -9,7 +9,7 @@ class ReverseStringTest {
     private final ReverseString reverseString = new ReverseString();
 
     @Test
-    public void test() {
+    void test() {
         assertArrayEquals(new char[]{'o', 'l', 'l', 'e', 'h'},
                 reverseString.reverseString(new char[]{'h', 'e', 'l', 'l', 'o'}));
         assertArrayEquals(new char[]{'H', 'a', 'n', 'n', 'a', 'h'},

@@ -10,7 +10,7 @@ class SameTreeTest {
     private final SameTree sameTree = new SameTree();
 
     @Test
-    public void first_test() {
+    void first_test() {
         TreeNode p = new TreeNode(1,
                 new TreeNode(2, null, null),
                 new TreeNode(3, null, null)
@@ -25,12 +25,12 @@ class SameTreeTest {
     }
 
     @Test
-    public void null_test() {
+    void null_test() {
         assertTrue(sameTree.isSameTree(null, null));
     }
 
     @Test
-    public void reversed_tree() {
+    void reversed_tree() {
         TreeNode p = new TreeNode(1,
                 new TreeNode(2, null, null),
                 null
@@ -45,7 +45,7 @@ class SameTreeTest {
     }
 
     @Test
-    public void with_nulls_tree() {
+    void with_nulls_tree() {
         TreeNode p = new TreeNode(1,
                 new TreeNode(2, null, null),
                 new TreeNode(1, null, null)
@@ -60,7 +60,7 @@ class SameTreeTest {
     }
 
     @Test
-    public void trees_not_null() {
+    void trees_not_null() {
         assertTrue(sameTree.isSameTree(new TreeNode(), new TreeNode()));
     }
 }

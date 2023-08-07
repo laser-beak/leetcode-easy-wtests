@@ -9,7 +9,7 @@ class UniqueMorseCodeWordsTest {
     private final UniqueMorseCodeWords uniqueMorseCodeWords = new UniqueMorseCodeWords();
 
     @Test
-    public void test() {
+    void test() {
         assertEquals(0, uniqueMorseCodeWords.uniqueMorseRepresentations(new String[]{}));
         assertEquals(2, uniqueMorseCodeWords.uniqueMorseRepresentations(new String[]{"gin", "zen", "gig", "msg"}));
         assertEquals(1, uniqueMorseCodeWords.uniqueMorseRepresentations(new String[]{"a"}));

@@ -10,7 +10,7 @@ class CheckIfTheSentenceIsPangramTest {
     private final CheckIfTheSentenceIsPangram pangram = new CheckIfTheSentenceIsPangram();
 
     @Test
-    public void test() {
+    void test() {
         assertTrue(pangram.checkIfPangram("thequickbrownfoxjumpsoverthelazydog"));
         assertFalse(pangram.checkIfPangram("leetcode"));
         assertFalse(pangram.checkIfPangram("onrcsnlxckptsxffbyswujpamfltvmdoxovggepknmtacrjkkorjgvgtgaiaudspnpxkwikevmjeephhiyvnoymjwjfopovscbefecnoytjxfwasabwohqujwowmakpyuuqvgfab"));

@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 class DesignAnOrderedStreamTest {
 
     @Test
-    public void first_test() {
+    void first_test() {
         DesignAnOrderedStream designAnOrderedStream = new DesignAnOrderedStream(5);
 
         designAnOrderedStream.insert(3, "ccccc"); // Inserts (3, "ccccc"), returns [].

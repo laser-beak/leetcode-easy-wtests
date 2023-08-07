@@ -12,7 +12,7 @@ class FizzBuzzTest {
     private final FizzBuzz fizzBuzz = new FizzBuzz();
 
     @Test
-    public void test_first() {
+    void test_first() {
         List<String> stringList = new ArrayList<>();
         stringList.add("1");
         stringList.add("2");
@@ -22,7 +22,7 @@ class FizzBuzzTest {
     }
 
     @Test
-    public void test_second() {
+    void test_second() {
         List<String> stringList = new ArrayList<>();
         stringList.add("1");
         stringList.add("2");
@@ -34,7 +34,7 @@ class FizzBuzzTest {
     }
 
     @Test
-    public void test_third() {
+    void test_third() {
         List<String> stringList = new ArrayList<>();
         stringList.add("1");
         stringList.add("2");

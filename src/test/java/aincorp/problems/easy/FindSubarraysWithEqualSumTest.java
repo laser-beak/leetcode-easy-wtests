@@ -10,7 +10,7 @@ class FindSubarraysWithEqualSumTest {
     private final FindSubarraysWithEqualSum findSubarraysWithEqualSum = new FindSubarraysWithEqualSum();
 
     @Test
-    public void test() {
+    void test() {
         assertTrue(findSubarraysWithEqualSum.findSubarrays(new int[]{4, 2, 4}));
         assertTrue(findSubarraysWithEqualSum.findSubarrays(new int[]{0, 0, 0}));
         assertFalse(findSubarraysWithEqualSum.findSubarrays(new int[]{1, 2, 3, 4, 5}));

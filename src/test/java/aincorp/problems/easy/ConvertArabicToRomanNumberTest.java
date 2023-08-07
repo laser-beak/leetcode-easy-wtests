@@ -11,7 +11,7 @@ public class ConvertArabicToRomanNumberTest {
     private final ConvertNumber convertNumber = new ConvertNumber();
 
     @Test
-    public void test() {
+    void test() {
         assertEquals("I", convertNumber.toRoman(1));
         assertEquals("II", convertNumber.toRoman(2));
         assertEquals("III", convertNumber.toRoman(3));

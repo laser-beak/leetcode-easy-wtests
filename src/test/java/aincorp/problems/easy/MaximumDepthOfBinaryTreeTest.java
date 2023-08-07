@@ -10,7 +10,7 @@ class MaximumDepthOfBinaryTreeTest {
     private final MaximumDepthOfBinaryTree maximumDepthOfBinaryTree = new MaximumDepthOfBinaryTree();
 
     @Test
-    public void test() {
+    void test() {
         assertEquals(0, maximumDepthOfBinaryTree.maxDepth(null));
         assertEquals(1, maximumDepthOfBinaryTree.maxDepth(new TreeNode()));
         assertEquals(2, maximumDepthOfBinaryTree.maxDepth(new TreeNode(1, null, new TreeNode(2))));

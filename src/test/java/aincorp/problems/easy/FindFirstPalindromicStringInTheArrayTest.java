@@ -9,7 +9,7 @@ class FindFirstPalindromicStringInTheArrayTest {
     private final FindFirstPalindromicStringInTheArray find = new FindFirstPalindromicStringInTheArray();
 
     @Test
-    public void test() {
+    void test() {
         assertEquals("", find.firstPalindrome(new String[]{}));
         assertEquals("ada", find.firstPalindrome(new String[]{"abc", "car", "ada", "racecar", "cool"}));
         assertEquals("racecar", find.firstPalindrome(new String[]{"notapalindrome", "racecar"}));

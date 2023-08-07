@@ -9,7 +9,7 @@ class PlusOneTest {
     private final PlusOne plusOne = new PlusOne();
 
     @Test
-    public void test() {
+    void test() {
         assertArrayEquals(new int[]{1, 2, 4}, plusOne.plusOne(new int[]{1, 2, 3}));
         assertArrayEquals(new int[]{4, 3, 2, 2}, plusOne.plusOne(new int[]{4, 3, 2, 1}));
         assertArrayEquals(new int[]{1, 0}, plusOne.plusOne(new int[]{9}));

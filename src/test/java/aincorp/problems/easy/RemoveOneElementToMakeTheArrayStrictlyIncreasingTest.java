@@ -10,7 +10,7 @@ class RemoveOneElementToMakeTheArrayStrictlyIncreasingTest {
     private final RemoveOneElementToMakeTheArrayStrictlyIncreasing remove = new RemoveOneElementToMakeTheArrayStrictlyIncreasing();
 
     @Test
-    public void test() {
+    void test() {
         //assertFalse(remove.canBeIncreasing(new int[]{}));
         assertTrue(remove.canBeIncreasing(new int[]{1, 2, 10, 5, 7}));
         assertFalse(remove.canBeIncreasing(new int[]{2, 3, 1, 2}));

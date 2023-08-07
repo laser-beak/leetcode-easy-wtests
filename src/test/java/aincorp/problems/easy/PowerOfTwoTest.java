@@ -10,7 +10,7 @@ class PowerOfTwoTest {
     private final PowerOfTwo power = new PowerOfTwo();
 
     @Test
-    public void test() {
+    void test() {
         assertFalse(power.isPowerOfTwo(0));
         assertTrue(power.isPowerOfTwo(1));
         assertTrue(power.isPowerOfTwo(16));

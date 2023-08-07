@@ -10,12 +10,12 @@ class ImplementStrStrTest {
     private final ImplementStrStr implementStrStr = new ImplementStrStr();
 
     @Test
-    public void needle_is_empty() {
+    void needle_is_empty() {
         assertEquals(0, implementStrStr.strStr("", ""));
     }
 
     @Test
-    public void needle_is_contains_index_on_str() {
+    void needle_is_contains_index_on_str() {
         assertEquals(2, implementStrStr.strStr("hello", "ll"));
     }
 }

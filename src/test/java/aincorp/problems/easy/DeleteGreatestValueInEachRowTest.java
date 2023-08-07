@@ -9,7 +9,7 @@ class DeleteGreatestValueInEachRowTest {
     private final DeleteGreatestValueInEachRow deleteGreatestValueInEachRow = new DeleteGreatestValueInEachRow();
 
     @Test
-    public void test() {
+    void test() {
         assertEquals(10, deleteGreatestValueInEachRow.deleteGreatestValue(new int[][]{{10}}));
         assertEquals(8, deleteGreatestValueInEachRow.deleteGreatestValue(new int[][]{{1, 2, 4}, {3, 3, 1}}));
     }

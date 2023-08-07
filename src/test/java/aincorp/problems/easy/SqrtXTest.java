@@ -9,7 +9,7 @@ class SqrtXTest {
     private final SqrtX sqrtX = new SqrtX();
 
     @Test
-    public void test() {
+    void test() {
         assertEquals(0, sqrtX.mySqrt(0));
         assertEquals(2, sqrtX.mySqrt(4));
         assertEquals(2, sqrtX.mySqrt(8));

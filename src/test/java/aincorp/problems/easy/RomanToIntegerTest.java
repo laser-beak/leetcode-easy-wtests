@@ -9,7 +9,7 @@ class RomanToIntegerTest {
     private final RomanToInteger romanToInteger = new RomanToInteger();
 
     @Test
-    public void test() {
+    void test() {
         assertEquals(1, romanToInteger.romanToInt("I"));
     }
 

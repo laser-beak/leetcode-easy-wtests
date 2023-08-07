@@ -9,7 +9,7 @@ class SplitAStringInBalancedStringsTest {
     private final SplitAStringInBalancedStrings splitAStringInBalancedStrings = new SplitAStringInBalancedStrings();
 
     @Test
-    public void test() {
+    void test() {
         assertEquals(0, splitAStringInBalancedStrings.balancedStringSplit(""));
         assertEquals(1, splitAStringInBalancedStrings.balancedStringSplit("RL"));
         assertEquals(2, splitAStringInBalancedStrings.balancedStringSplit("RLRL"));

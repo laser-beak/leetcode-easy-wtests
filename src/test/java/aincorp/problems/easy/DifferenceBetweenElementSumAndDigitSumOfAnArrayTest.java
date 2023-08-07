@@ -9,7 +9,7 @@ class DifferenceBetweenElementSumAndDigitSumOfAnArrayTest {
     private DifferenceBetweenElementSumAndDigitSumOfAnArray difference = new DifferenceBetweenElementSumAndDigitSumOfAnArray();
 
     @Test
-    public void test() {
+    void test() {
         assertEquals(9, difference.differenceOfSum(new int[]{1, 15, 6, 3}));
         assertEquals(0, difference.differenceOfSum(new int[]{1, 2, 3, 4}));
     }

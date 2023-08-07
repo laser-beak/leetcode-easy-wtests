@@ -10,7 +10,7 @@ class GetMaximumInGeneratedArrayTest {
 
     @DisplayName("GetMaximumInGeneratedArray.getMaximumGenerated")
     @Test
-    public void getMaximumGenerated() {
+    void getMaximumGenerated() {
         assertEquals(3, getMaximumInGeneratedArray.getMaximumGenerated(7));
         assertEquals(1, getMaximumInGeneratedArray.getMaximumGenerated(2));
         assertEquals(2, getMaximumInGeneratedArray.getMaximumGenerated(3));

@@ -10,7 +10,7 @@ class ValidAnagramTest {
     private final ValidAnagram validAnagram = new ValidAnagram();
 
     @Test
-    public void test() {
+    void test() {
         assertTrue(validAnagram.isAnagram("anagram", "nagaram"));
         assertFalse(validAnagram.isAnagram("rat", "car"));
         assertFalse(validAnagram.isAnagram("aa", "bb"));

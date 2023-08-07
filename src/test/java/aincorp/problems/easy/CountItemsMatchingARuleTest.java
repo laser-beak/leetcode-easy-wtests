@@ -13,7 +13,7 @@ class CountItemsMatchingARuleTest {
     private final CountItemsMatchingARule countItemsMatchingARule = new CountItemsMatchingARule();
 
     @Test
-    public void first_test() {
+    void first_test() {
         List<List<String>> lists = new ArrayList<>();
         lists.add(new ArrayList<>(Arrays.asList("phone", "blue", "pixel")));
         lists.add(new ArrayList<>(Arrays.asList("computer", "silver", "lenovo")));
@@ -23,7 +23,7 @@ class CountItemsMatchingARuleTest {
     }
 
     @Test
-    public void second_test() {
+    void second_test() {
         List<List<String>> lists = new ArrayList<>();
         lists.add(new ArrayList<>(Arrays.asList("phone", "blue", "pixel")));
         lists.add(new ArrayList<>(Arrays.asList("computer", "silver", "phone")));

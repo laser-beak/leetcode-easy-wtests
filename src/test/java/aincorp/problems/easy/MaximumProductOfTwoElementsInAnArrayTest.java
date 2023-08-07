@@ -9,7 +9,7 @@ class MaximumProductOfTwoElementsInAnArrayTest {
     private final MaximumProductOfTwoElementsInAnArray max = new MaximumProductOfTwoElementsInAnArray();
 
     @Test
-    public void test() {
+    void test() {
         assertEquals(0, max.maxProduct(new int[]{}));
         assertEquals(12, max.maxProduct(new int[]{3, 7}));
         assertEquals(12, max.maxProduct(new int[]{3, 4, 5, 2}));

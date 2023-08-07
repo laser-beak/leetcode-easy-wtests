@@ -12,7 +12,7 @@ class IncreasingOrderSearchTreeTest {
     private final IncreasingOrderSearchTree increasingOrderSearchTree = new IncreasingOrderSearchTree();
 
     @Test
-    public void test() {
+    void test() {
         TreeNode root = new TreeNode(5,
                 new TreeNode(3,
                         new TreeNode(2,

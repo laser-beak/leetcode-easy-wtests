@@ -9,7 +9,7 @@ public class ConvertRomanToIntegerTest {
     private final ConvertRomanNumber convertRomanNumber = new ConvertRomanNumber();
 
     @Test
-    public void test() {
+    void test() {
         assertEquals(1, convertRomanNumber.toArabicNumber("I"));
         assertEquals(2, convertRomanNumber.toArabicNumber("II"));
         assertEquals(3, convertRomanNumber.toArabicNumber("III"));

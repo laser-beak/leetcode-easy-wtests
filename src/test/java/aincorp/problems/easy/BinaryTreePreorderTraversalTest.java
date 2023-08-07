@@ -12,7 +12,7 @@ class BinaryTreePreorderTraversalTest {
     private final BinaryTreePreorderTraversal binaryTreePreorderTraversal = new BinaryTreePreorderTraversal();
 
     @Test
-    public void test() {
+    void test() {
         assertEquals(Arrays.asList(), binaryTreePreorderTraversal.preorderTraversal(null));
         assertEquals(Arrays.asList(1), binaryTreePreorderTraversal.preorderTraversal(new TreeNode(1)));
         assertEquals(Arrays.asList(1, 2, 3), binaryTreePreorderTraversal.preorderTraversal(new TreeNode(1, null, new TreeNode(2, new TreeNode(3), null))));

@@ -11,7 +11,7 @@ class CellsInARangeOnAnExcelSheetTest {
     private CellsInARangeOnAnExcelSheet cells = new CellsInARangeOnAnExcelSheet();
 
     @Test
-    public void test() {
+    void test() {
         assertEquals(new ArrayList<String>() {
             {
                 add("K1");

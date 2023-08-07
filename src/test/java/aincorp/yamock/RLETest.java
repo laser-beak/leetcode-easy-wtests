@@ -9,7 +9,7 @@ class RLETest {
     private final RLE rle = new RLE();
 
     @Test
-    public void test() {
+    void test() {
         assertEquals("", rle.rle(""));
         assertEquals("", rle.rle("   "));
         assertEquals("", rle.rle(null));

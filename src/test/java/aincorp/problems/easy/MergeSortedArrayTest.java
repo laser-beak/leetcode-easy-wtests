@@ -24,6 +24,6 @@ class MergeSortedArrayTest {
 
     @Test
     public void test_nums1_is_zeroes() {
-        assertArrayEquals(new int[]{1, 2, 3, 4, 5}, mergeSortedArray.merge(new int[]{0, 0, 0, 0, 0}, 0, new int[]{1,2,3,4,5}, 5));
+        assertArrayEquals(new int[]{1, 2, 3, 4, 5}, mergeSortedArray.merge(new int[]{0, 0, 0, 0, 0}, 0, new int[]{1, 2, 3, 4, 5}, 5));
     }
 }

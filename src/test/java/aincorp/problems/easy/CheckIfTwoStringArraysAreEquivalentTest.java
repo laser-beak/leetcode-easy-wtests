@@ -9,7 +9,7 @@ class CheckIfTwoStringArraysAreEquivalentTest {
     private final CheckIfTwoStringArraysAreEquivalent check = new CheckIfTwoStringArraysAreEquivalent();
 
     @Test
-    public void test() {
+    void test() {
         assertEquals(true, check.arrayStringsAreEqual(new String[]{"ab", "c"}, new String[]{"a", "bc"}));
         assertEquals(false, check.arrayStringsAreEqual(new String[]{"a", "cb"}, new String[]{"ab", "c"}));
         assertEquals(true, check.arrayStringsAreEqual(new String[]{"abc", "d", "defg"}, new String[]{"abcddefg"}));

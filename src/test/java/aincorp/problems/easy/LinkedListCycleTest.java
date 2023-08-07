@@ -10,7 +10,7 @@ class LinkedListCycleTest {
     private final LinkedListCycle listCycle = new LinkedListCycle();
 
     @Test
-    public void when_ListNode_have_cycle() {
+    void when_ListNode_have_cycle() {
         ListNode two = new ListNode(2);
         two.next = new ListNode(0, new ListNode(-4, two));
         ListNode head = new ListNode(3, two);
@@ -19,12 +19,12 @@ class LinkedListCycleTest {
     }
 
     @Test
-    public void when_ListNode_Not_have_cycle() {
+    void when_ListNode_Not_have_cycle() {
         assertFalse(listCycle.hasCycle(new ListNode(1)));
     }
 
     @Test
-    public void when_ListNode_have_cycle_second_test() {
+    void when_ListNode_have_cycle_second_test() {
         ListNode head = new ListNode(1);
         ListNode two = new ListNode(2, head);
         head.next = two;

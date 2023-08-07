@@ -10,7 +10,7 @@ class SubtractProductAndSumOfDigitsOfAnIntegerTest {
 
     @DisplayName("SubtractProductAndSumOfDigitsOfAnInteger.subtractProductAndSum")
     @Test
-    public void test() {
+    void test() {
         assertEquals(21, subtractProductAndSumOfDigitsOfAnInteger.subtractProductAndSum(4421));
         assertEquals(15, subtractProductAndSumOfDigitsOfAnInteger.subtractProductAndSum(234));
     }

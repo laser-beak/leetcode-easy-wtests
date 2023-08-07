@@ -9,7 +9,7 @@ class MinimumTimeVisitingAllPointsTest {
     private final MinimumTimeVisitingAllPoints minimumTimeVisitingAllPoints = new MinimumTimeVisitingAllPoints();
 
     @Test
-    public void test() {
+    void test() {
         assertEquals(0, minimumTimeVisitingAllPoints.minTimeToVisitAllPoints(new int[][]{}));
         assertEquals(7, minimumTimeVisitingAllPoints.minTimeToVisitAllPoints(new int[][]{{1, 1}, {3, 4}, {-1, 0}}));
     }

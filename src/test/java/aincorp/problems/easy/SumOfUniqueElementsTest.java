@@ -10,7 +10,7 @@ class SumOfUniqueElementsTest {
     private final SumOfUniqueElements sum = new SumOfUniqueElements();
 
     @Test
-    public void test() {
+    void test() {
         assertEquals(4, sum.sumOfUnique(new int[]{1, 2, 3, 2}));
         assertEquals(0, sum.sumOfUnique(new int[]{1, 1, 1, 1, 1}));
         assertEquals(15, sum.sumOfUnique(new int[]{1, 2, 3, 4, 5}));

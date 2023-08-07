@@ -8,7 +8,7 @@ class ValidPalindromeTest {
     private final ValidPalindrome validPalindrome = new ValidPalindrome();
 
     @Test
-    public void test() {
+    void test() {
         assertEquals(true, validPalindrome.isPalindrome("A man, a plan, a canal: Panama"));
         assertEquals(false, validPalindrome.isPalindrome("race a car"));
         assertEquals(true, validPalindrome.isPalindrome("T e, : n E , : t"));

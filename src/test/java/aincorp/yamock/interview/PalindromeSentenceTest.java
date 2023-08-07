@@ -1,15 +1,17 @@
 package aincorp.yamock.interview;
 
 
-import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class PalindromeSentenceTest {
 
     private final PalindromeSentence palindromeSentence = new PalindromeSentence();
 
     @Test
-    public void test() {
+    void test() {
         assertFalse(palindromeSentence.isPalindromeSentence(""));
         assertFalse(palindromeSentence.isPalindromeSentence(null));
         assertFalse(palindromeSentence.isPalindromeSentence(" "));

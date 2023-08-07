@@ -9,7 +9,7 @@ class RingsAndRodsTest {
     private final RingsAndRods ringsAndRods = new RingsAndRods();
 
     @Test
-    public void test() {
+    void test() {
         assertEquals(1, ringsAndRods.countPoints("B0B6G0R6R0R6G9"));
         assertEquals(1, ringsAndRods.countPoints("B0R0G0R9R0B0G0"));
         assertEquals(1, ringsAndRods.countPoints("B0R0G0R9R0B0G0"));

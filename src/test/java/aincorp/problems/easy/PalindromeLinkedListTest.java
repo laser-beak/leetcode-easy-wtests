@@ -9,7 +9,7 @@ class PalindromeLinkedListTest {
     private final PalindromeLinkedList palindromeLinkedList = new PalindromeLinkedList();
 
     @Test
-    public void test() {
+    void test() {
         ListNode actual = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4))));
         assertFalse(palindromeLinkedList.isPalindrome(actual));
 

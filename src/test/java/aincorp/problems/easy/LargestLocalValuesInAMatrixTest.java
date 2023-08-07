@@ -9,7 +9,7 @@ class LargestLocalValuesInAMatrixTest {
     private final LargestLocalValuesInAMatrix localValuesInAMatrix = new LargestLocalValuesInAMatrix();
 
     @Test
-    public void test() {
+    void test() {
         assertArrayEquals(new int[][]{{9, 9}, {8, 6}}, localValuesInAMatrix.largestLocal(new int[][]{{9, 9, 8, 1}, {5, 6, 2, 6}, {8, 2, 6, 4}, {6, 2, 2, 2}}));
         assertArrayEquals(new int[][]{{2, 2, 2}, {2, 2, 2}, {2, 2, 2}}, localValuesInAMatrix.largestLocal(new int[][]{{1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}, {1, 1, 2, 1, 1}, {1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}}));
         assertArrayEquals(new int[][]{{20, 20, 20, 20, 20, 18, 18, 18},

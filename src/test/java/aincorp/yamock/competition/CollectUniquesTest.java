@@ -11,7 +11,7 @@ class CollectUniquesTest {
     public final CollectUniques collectUniques = new CollectUniques();
 
     @Test
-    public void test() {
+    void test() {
         assertEquals(Arrays.asList(2, 4, 8), collectUniques.uniques(Arrays.asList(2, 4, 8, 8, 8)));
     }
 

@@ -16,7 +16,7 @@ class NumMatrixTest {
     );
 
     @Test
-    public void test() {
+    void test() {
         assertEquals(8, numMatrix.sumRegion(2, 1, 4, 3));
         assertEquals(11, numMatrix.sumRegion(1, 1, 2, 2));
         assertEquals(12, numMatrix.sumRegion(1, 2, 2, 4));

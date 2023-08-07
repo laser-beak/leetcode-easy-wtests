@@ -9,7 +9,7 @@ class BackspaceStringCompareTest {
     private final BackspaceStringCompare backspaceStringCompare = new BackspaceStringCompare();
 
     @Test
-    public void test() {
+    void test() {
         assertTrue(backspaceStringCompare.backspaceCompare("", ""));
         assertTrue(backspaceStringCompare.backspaceCompare("ab#c", "ad#c"));
         assertTrue(backspaceStringCompare.backspaceCompare("ab##", "c#d#"));

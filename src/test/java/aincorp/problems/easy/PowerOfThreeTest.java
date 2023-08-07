@@ -10,7 +10,7 @@ class PowerOfThreeTest {
     private final PowerOfThree powerOfThree = new PowerOfThree();
 
     @Test
-    public void test() {
+    void test() {
         assertFalse(powerOfThree.isPowerOfThree(0));
         assertTrue(powerOfThree.isPowerOfThree(27));
         assertFalse(powerOfThree.isPowerOfThree(-1));
